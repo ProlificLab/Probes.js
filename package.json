@@ -1,0 +1,32 @@
+{
+    "name": "Probes.js",
+    "preferGlobal": "true",
+    "version": "0.0.1",
+    "author": "Prolific Lab <contact@prolificlab.com>",
+    "description": "a simple zero-configuration command-line http server",
+    "contributors": [
+        {
+            "name": "Christophe Harrer",
+            "email": "c.harrer@prolificlab.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ProlificLab/Probes.js.git"
+    },
+    "keywords": [
+        "monitoring",
+        "performance",
+        "statistics"
+    ],
+    "dependencies" : {
+        "chai"          : ">0.0.1",
+        "async"          : ">0.0.1",
+        "mocha"          : ">0.0.1",
+        "nodeunit"      :  "*"
+    },
+    "license": "MIT",
+    "engine": {
+        "node": ">=0.4"
+    }
+}
