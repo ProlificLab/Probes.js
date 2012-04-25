@@ -14,7 +14,7 @@ npm install Probes.js
 **How to Use**
 
 ```javascript
-var probes = require('Probes.js);
+var probes = require('Probes.js');
 
 //Print the number of hard drives connected to the server
 probes.hardDriveProbe(function(err,results){
@@ -30,7 +30,12 @@ Function Documentation
 ```javascript
 probes.hardDriveProbe(function(err,results){});
 
-results = [{fileSystem : name, totalSpace : Ko, usedSpace : Ko, availableSpace : Ko, percentUsed : percent, mountPoint : path}];
+results = [{fileSystem      : name,
+            totalSpace      : Ko,
+            usedSpace       : Ko,
+            availableSpace  : Ko,
+            percentUsed     : percent,
+            mountPoint      : path}];
 ```
 
 **folderProbe**
@@ -46,7 +51,10 @@ results = folderSizeKo;
 ```javascript
 probes.cpuProbe(function(err,results){});
 
-results = { spot : percentRigthNow, one : averageLastMinute, five : averageLastFiveMinutes,fifteen : averageLastFifteenMinutes};
+results = { spot    : percentRigthNow,
+            one     : averageLastMinute,
+            five    : averageLastFiveMinutes,
+            fifteen : averageLastFifteenMinutes};
 ```
 
 **memoryProbe**
@@ -54,7 +62,9 @@ results = { spot : percentRigthNow, one : averageLastMinute, five : averageLastF
 ```javascript
 probes.memoryProbe(function(err,results){});
 
-results = {freeMemory : freeMemory, activeMemory : usedMemory, totalMemory : totalMemory};
+results = {freeMemory       : freeMemory,
+            activeMemory    : usedMemory,
+            totalMemory     : totalMemory};
 ```
 
 **processListProbe**
@@ -62,5 +72,9 @@ results = {freeMemory : freeMemory, activeMemory : usedMemory, totalMemory : tot
 ```javascript
 probes.processListProbe(function(err,results){});
 
-results = [{pid : processPid, name : commandName, time : elapsedTime, pcpu : percentOfCpuUsed, pmem : percentOfMemoryUsed}];
+results = [{pid  : processPid,
+            name : commandName,
+            time : elapsedTime,
+            pcpu : percentOfCpuUsed,
+            pmem : percentOfMemoryUsed}];
 ```
