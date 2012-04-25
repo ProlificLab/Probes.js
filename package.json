@@ -1,9 +1,9 @@
 {
     "name": "Probes.js",
     "preferGlobal": "true",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Prolific Lab <contact@prolificlab.com>",
-    "description": "a simple zero-configuration command-line http server",
+    "description": "A simple Node.js module to get server performance statistics",
     "contributors": [
         {
             "name": "Christophe Harrer",
@@ -22,8 +22,7 @@
     "dependencies" : {
         "chai"          : ">0.0.1",
         "async"          : ">0.0.1",
-        "mocha"          : ">0.0.1",
-        "nodeunit"      :  "*"
+        "mocha"          : ">0.0.1"
     },
     "license": "MIT",
     "engine": {
